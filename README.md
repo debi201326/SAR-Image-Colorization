@@ -1,21 +1,3 @@
 **Cross-Domain SAR to RGB Image Translation using Conditional GAN with Perceptual Guidance **
 
-Synthetic Aperture Radar (SAR) images are a valuable source of remote sensing data due to their ability to capture high-resolution surface information regardless of weather and lighting conditions. However, SAR images are typically grayscale and lack the semantic richness of optical images, making them difficult for human interpretation.
-
-This project proposes a deep learning-based SAR image colorization method using a Conditional Generative Adversarial Network (cGAN).
-
-🔧 Key Features
-U-Net-based Generator: Transforms single-channel SAR images into colorized RGB images, preserving spatial details.
-Discriminator: Encourages local realism and texture consistency in generated outputs.
-Composite Loss Function:
-Perceptual Loss (from pre-trained VGG19)
-Pixel-wise L1 Loss
-Adversarial Loss
-
-📚 Dataset
-We train our model on paired SAR-optical image datasets covering a variety of land cover classes, enabling better generalization and semantic mapping.
-
-🎯 Results
-The colorized outputs:
-Retain fine spatial patterns
-Show high visual realism
+This project presents a deep learning-based approach for colorizing Synthetic Aperture Radar (SAR) images using a Conditional Generative Adversarial Network (cGAN). SAR images, though effective in capturing high-resolution surface data under all weather and lighting conditions, are grayscale and lack the semantic depth of optical images, making human interpretation challenging. To bridge this gap, we employ a U-Net-based generator to convert single-channel SAR inputs into colorized RGB outputs, guided by a discriminator that enforces texture realism. The model is trained using a composite loss function combining perceptual loss (from VGG19), pixel-wise L1 loss, and adversarial loss to enhance structural accuracy and visual fidelity. Trained on a paired SAR-optical dataset covering diverse land cover classes, the method generates colorized images that preserve spatial detail and exhibit high visual realism, making it suitable for practical remote sensing applications.
