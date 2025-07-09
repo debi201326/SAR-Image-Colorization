@@ -1,3 +1,21 @@
-Cross-Domain SAR to RGB Image Translation using Conditional GAN with Perceptual Guidance 
+**Cross-Domain SAR to RGB Image Translation using Conditional GAN with Perceptual Guidance **
 
-Synthetic Aperture Radar (SAR) images are an important source of remote sensing data because it can obtain high-resolution surface information regardless of weather and lighting conditions. SAR images are, however, grayscale and do not possess the same semantic richness as optical imagery so they are not easily understandable for human analysis. This paper proposes a method for SAR image colorization based on deep learning using a conditional Generative Adversarial Network (cGAN). The proposed architecture utilizes a U-Net-based generator to map single-channel SAR encourages local realism and texture consistency to check visual consistency. We use a composite loss function that combines perceptual loss calculated using pre-trained VGG19 features, pixel-wise L1 loss, and adversarial loss to enhance visual quality and structural accuracy. A dataset of SAR-optical image pairings spanning different land cover classes is used to train the model. Experimental outcomes show that the colorized images generated maintain fine spatial patterns and attain high visual realism, thereby making the method promising for real-world applications in Earth observation and remote sensing analysis. 
+Synthetic Aperture Radar (SAR) images are a valuable source of remote sensing data due to their ability to capture high-resolution surface information regardless of weather and lighting conditions. However, SAR images are typically grayscale and lack the semantic richness of optical images, making them difficult for human interpretation.
+
+This project proposes a deep learning-based SAR image colorization method using a Conditional Generative Adversarial Network (cGAN).
+
+🔧 Key Features
+U-Net-based Generator: Transforms single-channel SAR images into colorized RGB images, preserving spatial details.
+Discriminator: Encourages local realism and texture consistency in generated outputs.
+Composite Loss Function:
+Perceptual Loss (from pre-trained VGG19)
+Pixel-wise L1 Loss
+Adversarial Loss
+
+📚 Dataset
+We train our model on paired SAR-optical image datasets covering a variety of land cover classes, enabling better generalization and semantic mapping.
+
+🎯 Results
+The colorized outputs:
+Retain fine spatial patterns
+Show high visual realism
